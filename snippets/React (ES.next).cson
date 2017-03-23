@@ -127,9 +127,9 @@
     'body': "${1}: PropTypes.func.isRequired,"
 
   # PropType node
-  'React PropType function':
+  'React PropType node':
     'prefix': 'respnode',
     'body': "${1}: PropTypes.node,"
-  'React PropType function required':
+  'React PropType node required':
     'prefix': 'respnoder',
     'body': "${1}: PropTypes.node.isRequired,"
