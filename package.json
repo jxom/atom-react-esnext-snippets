@@ -1,0 +1,19 @@
+{
+  "name": "react-esnext-snippets",
+  "version": "0.3.0",
+  "description": "React ES.next snippets for Atom",
+  "keywords": [
+    "react",
+    "ES6",
+    "ES7",
+    "ESnext",
+    "babel",
+    "snippets"
+  ],
+  "repository": "https://github.com/jxom/atom-react-esnext-snippets",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,135 @@
+'.source.js.jsx':
+  'React ES.next Component':
+    'prefix': 'resc'
+    'body': """
+      import React, { Component, PropTypes } from 'react';
+
+      export class ${1:MyComponent} extends Component {
+        render() {
+          return (${2:<div>MyComponent</div>});
+        }
+      }
+
+      ${1}.propTypes = {
+      };
+
+      export default ${1:MyComponent};
+    """
+  'React ES.next Functional Component':
+    'prefix': 'resfunc'
+    'body': """
+      import React, { PropTypes } from 'react';
+
+      const ${1} = () => {
+        return (
+          ${2:<div>MyComponent</div>}
+        );
+      };
+
+      ${1}.propTypes = {
+      };
+
+      export default ${1};
+    """
+  'React ES.next Functional Component (Minimal)':
+    'prefix': 'resfuncm'
+    'body': """
+      import React from 'react';
+
+      const ${1} = () => (
+        ${2:<div>MyComponent</div>}
+      );
+
+      export default ${1};
+    """
+  'React ES.next initial state definition':
+    'prefix': 'resstate',
+    'body': """
+      state = { ${1}: ${2} };
+    """
+  'React ES.next method definition':
+    'prefix': 'resmethod',
+    'body': """
+      ${1} = () => {
+
+      }
+    """
+  'React ES.next prop types definition':
+    'prefix': 'respt',
+    'body': """
+      ${1}.propTypes = {
+        ${2}
+      };
+    """
+  'React ES.next default props definition':
+    'prefix': 'resdp',
+    'body': """
+      ${1}.defaultProps = {
+        ${2}
+      };
+    """
+
+
+  # PropType string
+  'React PropType string':
+    'prefix': 'resstring',
+    'body': "${1}: PropTypes.string,"
+  'React PropType string required':
+    'prefix': 'resstringr',
+    'body': "${1}: PropTypes.string.isRequired,"
+
+  # PropType number
+  'React PropType number':
+    'prefix': 'respnumber',
+    'body': "${1}: PropTypes.number,"
+  'React PropType number required':
+    'prefix': 'respnumberr',
+    'body': "${1}: PropTypes.number.isRequired,"
+
+  # PropType object
+  'React PropType object':
+    'prefix': 'respobject',
+    'body': "${1}: PropTypes.object,"
+  'React PropType object required':
+    'prefix': 'respobjectr',
+    'body': "${1}: PropTypes.object.isRequired,"
+
+  # PropType array
+  'React PropType array':
+    'prefix': 'resparray',
+    'body': "${1}: PropTypes.array,"
+  'React PropType array required':
+    'prefix': 'resparrayr',
+    'body': "${1}: PropTypes.array.isRequired,"
+
+  # PropType bool
+  'React PropType bool':
+    'prefix': 'respbool',
+    'body': "${1}: PropTypes.bool,"
+  'React PropType bool required':
+    'prefix': 'respboolr',
+    'body': "${1}: PropTypes.bool.isRequired,"
+
+  # PropType element
+  'React PropType element':
+    'prefix': 'respel',
+    'body': "${1}: PropTypes.element,"
+  'React PropType element required':
+    'prefix': 'respel',
+    'body': "${1}: PropTypes.element.isRequired,"
+
+  # PropType function
+  'React PropType function':
+    'prefix': 'respfunc',
+    'body': "${1}: PropTypes.func,"
+  'React PropType function required':
+    'prefix': 'respfuncr',
+    'body': "${1}: PropTypes.func.isRequired,"
+
+  # PropType node
+  'React PropType function':
+    'prefix': 'respnode',
+    'body': "${1}: PropTypes.node,"
+  'React PropType function required':
+    'prefix': 'respnoder',
+    'body': "${1}: PropTypes.node.isRequired,"
